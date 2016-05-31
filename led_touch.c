@@ -26,8 +26,8 @@ int running = 1;
 __attribute__((constructor)) static void _init()
 {
   board_config *config = libsoc_board_init();
-  GPIO_BUTTON = libsoc_board_gpio_id(config, "GPIO-A");
-  GPIO_LED = libsoc_board_gpio_id(config, "GPIO-C");
+  GPIO_BUTTON = libsoc_board_gpio_id(config, "GPIO-E");
+  GPIO_LED = libsoc_board_gpio_id(config, "GPIO-G");
  libsoc_board_free(config);
 }
 /* End of 96Boards special code */
